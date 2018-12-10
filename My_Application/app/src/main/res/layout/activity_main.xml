@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oumaima.my_application.MainActivity">
+
+    <TextView
+        android:id="@+id/txtintro"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:text="Hello World!"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_height="70dp"
+        android:hint="Entrez votre nom" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_height="72dp"
+        android:hint="Entrez votre prenom" />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:text="next" />
+
+</TableLayout>
