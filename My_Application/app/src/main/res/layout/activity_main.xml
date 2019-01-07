@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.oumaima.my_application.MainActivity">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtintro"
+        android:layout_marginTop="49dp" />
+
     <TextView
         android:id="@+id/txtintro"
         android:layout_width="wrap_content"
-        android:layout_height="180dp"
-        android:text="Hello World!"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/nom"
-        android:layout_height="70dp"
-        android:hint="Entrez votre nom" />
-
-    <EditText
-        android:id="@+id/prenom"
-        android:layout_height="72dp"
-        android:hint="Entrez votre prenom" />
     <Button
         android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="21dp"
         android:text="next" />
 
-</TableLayout>
+</RelativeLayout>
